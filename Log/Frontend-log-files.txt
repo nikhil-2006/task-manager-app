@@ -1,0 +1,73 @@
+========================================
+Task Manager Application - Frontend Logs
+Date: 17-Feb-2026
+Environment: React (Vite / CRA) + Axios
+Backend: Django REST API (localhost:8000)
+========================================
+
+--- Application Start ---
+[20:47:50] React App Loaded Successfully
+
+--- Authentication Flow ---
+[20:47:54] POST /api/auth/login/ 
+Status: 200 OK
+Result: JWT Access & Refresh Token received
+Action: Tokens stored in localStorage
+
+[20:47:54] GET /api/auth/profile/
+Status: 200 OK
+Result: User profile data loaded successfully
+
+--- Dashboard Load ---
+[20:47:54] GET /api/tasks/
+Status: 200 OK
+Result: Tasks fetched and rendered in UI
+
+--- Create Task ---
+[20:41:43] POST /api/tasks/
+Status: 201 Created
+Result: Task added successfully
+UI: Task list refreshed automatically
+
+--- Fetch Updated Tasks ---
+[20:41:43] GET /api/tasks/
+Status: 200 OK
+Result: Updated task list rendered
+
+--- Update Task ---
+PUT /api/tasks/{id}/
+Status: 200 OK
+Result: Task updated successfully
+UI: Task list refreshed
+
+--- Delete Task ---
+DELETE /api/tasks/{id}/
+Status: 204 No Content
+Result: Task deleted successfully
+UI: Task removed from dashboard
+
+--- Search Functionality ---
+Local filtering performed on task titles
+No backend call required
+
+--- Sidebar Navigation ---
+Profile scroll: Working
+Tasks scroll: Working
+Mobile sidebar toggle: Working
+Overlay close: Working
+
+--- Logout ---
+Tokens removed from localStorage
+User redirected to Login page
+
+========================================
+Summary:
+✔ Authentication working
+✔ JWT stored correctly
+✔ CRUD operations functional
+✔ API integration successful
+✔ Responsive UI working
+✔ Sidebar navigation working
+========================================
+
+No frontend runtime errors observed.
