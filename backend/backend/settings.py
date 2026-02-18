@@ -59,9 +59,12 @@ MIDDLEWARE = [
 # CORS
 # ===============================
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOWED_ORIGINS = [
-    "https://your-frontend-url.onrender.com"
+    "https://task-manager-frontend-5iw3aak41-nikhil-2006s-projects.vercel.app"
 ]
+
 
 # ===============================
 # URLS
