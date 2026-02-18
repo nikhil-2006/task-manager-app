@@ -5,6 +5,7 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
 # ===============================
 # SECURITY
 # ===============================
@@ -13,9 +14,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-dev-key")
 
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "*").split(",")
-
 AUTH_USER_MODEL = 'users.CustomUser'
+
+ALLOWED_HOSTS = ["task-manager-app-e7ju.onrender.com"]
 
 # ===============================
 # APPLICATIONS
@@ -58,7 +59,9 @@ MIDDLEWARE = [
 # CORS
 # ===============================
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://your-frontend-url.onrender.com"
+]
 
 # ===============================
 # URLS
