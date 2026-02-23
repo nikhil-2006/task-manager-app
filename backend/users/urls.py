@@ -9,7 +9,7 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
 
-    path('auth/register/', RegisterView.as_view()),
+    path('auth/register/', RegisterView.as_view(), name = 'register'),
     path('auth/profile/', ProfileView.as_view()),
 
     # 🔥 ADD THESE TWO LINES
