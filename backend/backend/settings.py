@@ -76,11 +76,11 @@ MIDDLEWARE = [
 # CORS
 # ===============================
 
-CORS_ALLOW_ALL_ORIGINS = True
-
 CORS_ALLOWED_ORIGINS = [
-    "https://task-manager-frontend-5iw3aak41-nikhil-2006s-projects.vercel.app"
+    "https://task-manager-frontend-murex-nine.vercel.app",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = False
 
 
 # ===============================
